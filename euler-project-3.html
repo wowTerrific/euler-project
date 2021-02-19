@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Euler Project 3</title>
+  </head>
+  <body>
+	<h1>Euler Project 3</h1>
+	<p>The prime factors of 13195 are 5, 7, 13, and 29.</p>
+	<p>What is the largest prime factor of the number 600851475143?</p>
+	
+	<div id="factor" style="font-weight: bold;font-size:24px;"></div>
+  <script>
+let factor = document.getElementById('factor');
+let bigBoy = 600851475143;
+function isPrime(num) {
+  for (let j = 2; j < num; j++) {
+    if (num % j === 0) {return false;}
+  }
+  return (num > 1);
+}
+
+for (let i = 2; i < (bigBoy/2); i++) {
+  if ( (bigBoy % i === 0) && (isPrime(bigBoy / i)) ) {
+    factor.innerHTML = '<p>' + (bigBoy / i) + '</p>';
+    break;
+  }
+}
+
+  </script>
+  </body>
+</html>

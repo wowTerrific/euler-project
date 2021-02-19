@@ -1,0 +1,154 @@
+@font-face {
+	font-family: Oswald;
+	src: url('static/fonts/Oswald-ExtraLight.ttf');
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: Oswald;
+	src: url('static/fonts/Oswald-Light.ttf');
+	font-weight: 200;
+}
+@font-face {
+	font-family: Oswald;
+	src: url('static/fonts/Oswald-Medium.ttf');
+	font-weight: 300;
+}
+@font-face {
+	font-family: Oswald;
+	src: url('static/fonts/Oswald-Regular.ttf');
+	font-weight: 400;
+}
+@font-face {
+	font-family: Oswald;
+	src: url('static/fonts/Oswald-SemiBold.ttf');
+	font-weight: 500;
+}
+@font-face {
+	font-family: Oswald;
+	src: url('static/fonts/Oswald-Bold.ttf');
+	font-weight: 600;
+}
+@font-face {
+	font-family: Open-Sans;
+	src: url('static/fonts/OpenSans-Light.ttf');
+	font-weight: 200;
+}
+@font-face {
+	font-family: Open-Sans;
+	src: url('static/fonts/OpenSans-LightItalic.ttf');
+	font-weight: 200;
+	font-style: italic;
+}
+@font-face {
+	font-family: Open-Sans;
+	src: url('static/fonts/OpenSans-Regular.ttf');
+	font-weight: 400;
+}
+@font-face {
+	font-family: Open-Sans;
+	src: url('static/fonts/OpenSans-Italic.ttf');
+	font-weight: 400;
+	font-style: italic;
+}
+@font-face {
+	font-family: Open-Sans;
+	src: url('static/fonts/OpenSans-SemiBold.ttf');
+	font-weight: 500;
+}
+@font-face {
+	font-family: Open-Sans;
+	src: url('static/fonts/OpenSans-SemiBoldItalic.ttf');
+	font-weight: 500;
+	font-style: italic;
+}
+@font-face {
+	font-family: Open-Sans;
+	src: url('static/fonts/OpenSans-Bold.ttf');
+	font-weight: 600;
+}
+@font-face {
+	font-family: Open-Sans;
+	src: url('static/fonts/OpenSans-BoldItalic.ttf');
+	font-weight: 600;
+	font-family: italic;
+}
+@font-face {
+	font-family: Open-Sans;
+	src: url('static/fonts/OpenSans-ExtraBold.ttf');
+	font-weight: 700;
+}
+@font-face {
+	font-family: Open-Sans;
+	src: url('static/fonts/OpenSans-ExtraBoldItalic.ttf');
+	font-weight: 700;
+	font-style: italic;
+}
+$primary_color: #003459;
+$secondary_color: #00A7E1;
+$accent_color: #9500BF;
+$action_color: #FF9100;
+$dark_color: #00171F;
+$white: #F3EFF5;
+$heading_font: Oswald, sans-serif;
+$main_font: Open-Sans, sans-serif;
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  color: $dark_color;
+  font-family: $main_font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading_font;
+}
+
+body {
+  width: 100%;
+  max-width: 1800px;
+  margin: auto;
+  padding-top:25px;
+  background-color: $white;
+}
+.body-content {
+  height: auto;
+  min-height: 80vh;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+
+  h3 {
+    font-size: 4em;
+    
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    border-bottom: 2px solid $secondary_color;
+  }
+  li {
+    margin: 0 10px 10px 10px;
+    font-weight: bold;
+  }
+  a {text-decoration: none;}
+}
+footer {
+  background: $secondary_color;
+  color: white;
+  padding: 25px;
+}
+.contain {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 15px;
+}
+.center {text-align: center;}
+.dark {background-color: $dark_color; color: $white;}
